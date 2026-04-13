@@ -1,0 +1,26 @@
+{
+  "name": "@slamb2k/chrome-reconnect",
+  "version": "1.0.0",
+  "description": "PostToolUse hook that detects Chrome MCP disconnects and alerts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slamb2k/chrome-reconnect"
+  },
+  "files": [
+    "skills/",
+    "hooks/",
+    ".claude-plugin/"
+  ],
+  "keywords": [
+    "chrome",
+    "mcp",
+    "reconnect",
+    "hook",
+    "browser-automation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -66,7 +66,7 @@ Start with **Phase 1** from `SPEC.md`. Before writing any code, verify the PostT
 ## Project Structure
 
 ```
-chrome-alive/
+chrome-reconnect/
 ├── CLAUDE.md           This file
 ├── .gitignore          Ignores credentials, data, temp files
 ├── specs/              Specifications (/speccy output, /build input)
