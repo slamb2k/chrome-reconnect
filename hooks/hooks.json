@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUseFailure": [
+      {
+        "matcher": "mcp__claude-in-chrome__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "_R=\"${CLAUDE_PLUGIN_ROOT}\"; [ -z \"$_R\" ] && _R=\"$HOME/.claude/plugins/marketplaces/slamb2k/chrome-reconnect\"; node \"$_R/hooks/chrome-reconnect.cjs\"",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

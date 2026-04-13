@@ -12,7 +12,7 @@ Read `SPEC.md` for the full implementation specification. Follow it as the sourc
 
 - Bash (hook scripts)
 - Claude Code hooks system (PostToolUse event)
-- File-based state tracking (`/tmp/chrome-mcp-reconnect.state`)
+- File-based state tracking (`/tmp/chrome-reconnect.state`)
 - File-based logging (`~/.claude/logs/chrome-reconnect.log`)
 
 ## Architecture Rules
@@ -29,7 +29,7 @@ Read `SPEC.md` for the full implementation specification. Follow it as the sourc
 - All paths use `$HOME` expansion, not hardcoded `/home/slamb2k`.
 - Log format: `[ISO8601_TIMESTAMP] [LEVEL] message` (plain text for Phase 1).
 - State file is plain text with a single Unix timestamp.
-- Script name: `chrome-mcp-reconnect.sh`, stored in `~/.claude/hooks/`.
+- Hook script: `chrome-reconnect.cjs`, installed via `claude plugin install slamb2k/chrome-reconnect`.
 
 ## Patterns to Follow
 
@@ -66,7 +66,7 @@ Start with **Phase 1** from `SPEC.md`. Before writing any code, verify the PostT
 ## Project Structure
 
 ```
-chrome-alive/
+chrome-reconnect/
 ├── CLAUDE.md           This file
 ├── .gitignore          Ignores credentials, data, temp files
 ├── specs/              Specifications (/speccy output, /build input)
